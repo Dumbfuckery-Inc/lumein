@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'theme.dart';
+import 'package:lumein/theme.dart';
 import 'screen/screens.dart';
+import 'appbar.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -11,11 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Lumein',
+      
       theme: ThemeData(
         primarySwatch: MaterialColor(AppColors.primary,AppColors.color),
       ),
-      home: const HomePage(title: 'Lumein'),
+      home: const HomePage(),
     );
   }
 }
